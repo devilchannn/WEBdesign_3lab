@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f1ea">
+<meta name="description" content="FRAME/01 — минималистичная браузерная игра-платформер на Canvas.">
+<title>FRAME/01 — The Missing Pieces</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<div class="site-shell">
+<header class="masthead"><a href="#top" class="logotype" aria-label="FRAME/01 — наверх">FRAME<span>/</span>01<span class="logodot">.</span></a><span class="top-center">AN INTERACTIVE STUDY / 2026</span><span class="edition">EDITION N° 001</span></header>
+<main id="top">
+<section class="intro"><div class="eyebrow"><span class="red-square"></span> EXPERIMENTAL PLATFORMER / 01—03</div><div class="intro-main"><div><h1>THE MISSING<br><em>PIECES.</em></h1><p class="lede">Некоторые изображения нужно собрать заново.<br>Найди три фрагмента и доберись до выхода.</p></div><div class="stamp" aria-hidden="true"><span>FIND</span><span>WHAT IS</span><strong>LOST ✳</strong></div></div></section>
+<section class="game-section" aria-label="Игровая панель"><div class="game-toolbar"><div class="toolbar-title"><span class="tiny-num">01 / PLAYGROUND</span><span class="live-dot"></span><span id="statusLabel">READY TO PLAY</span></div><div class="toolbar-controls"><button type="button" id="startBtn" class="action primary">START <span>↗</span></button><button type="button" id="pauseBtn" class="action" disabled>PAUSE <span>Ⅱ</span></button><button type="button" id="restartBtn" class="action">RESTART <span>↻</span></button></div></div>
+<div class="game-frame" id="gameFrame"><canvas id="game" width="1000" height="560" role="img" aria-label="Игра-платформер: соберите три фрагмента, перепрыгните опасности и дойдите до финиша"></canvas><div class="game-overlay" id="overlay"><div class="overlay-panel"><div class="overlay-kicker" id="overlayKicker">NEW ARCHIVE / 001</div><h2 id="overlayTitle">READY TO<br>REASSEMBLE?</h2><p id="overlayText">Собери 3 фрагмента. Избегай красных зон. Дойди до портала справа.</p><button type="button" id="overlayBtn" class="overlay-action">START EXPLORING <span>↗</span></button></div></div></div>
+<div class="game-bottom"><div class="stat"><span>COLLECTED</span><strong id="fragmentsLabel">00 / 03</strong></div><div class="stat"><span>TIME</span><strong id="timeLabel">00:00</strong></div><div class="stat"><span>PERSONAL BEST</span><strong id="bestLabel">—</strong></div><div class="hint"><span class="tiny-num">HINT</span> <span id="hintText">Начни игру и исследуй архив →</span></div></div>
+<div class="touch-controls" aria-label="Экранное управление"><div class="touch-arrows"><button type="button" class="touch-btn" id="leftBtn" aria-label="Влево">←</button><button type="button" class="touch-btn" id="rightBtn" aria-label="Вправо">→</button></div><button type="button" class="touch-btn jump-btn" id="jumpBtn" aria-label="Прыгнуть">JUMP ↑</button></div>
+</section>
+<section class="info-section"><div class="info-title"><div class="tiny-num">02 / THE RULES</div><h2>MOVE.<br>JUMP.<br><em>COLLECT.</em></h2></div><div class="instructions"><div class="instruction"><span class="index">01</span><div><h3>MOVE</h3><p>Стрелки ← → или клавиши A / D для перемещения.</p></div><div class="key">← →</div></div><div class="instruction"><span class="index">02</span><div><h3>JUMP</h3><p>Пробел, W или ↑ для прыжка. Второго прыжка в воздухе нет.</p></div><div class="key">SPACE</div></div><div class="instruction"><span class="index">03</span><div><h3>COMPLETE</h3><p>Собери все три артефакта, затем достигни портала. Красные шипы и пропасти опасны.</p></div><div class="key">03 / 03</div></div><p class="extra-note">Игра автоматически приостанавливается при переключении вкладки. Лучшее время сохраняется в браузере.</p></div></section>
+</main><footer><div class="footer-brand">FRAME<span>/</span>01</div><div>BUILT WITH HTML · CSS · JAVASCRIPT</div><div>© 2026 / DIGITAL EXPERIMENT</div></footer></div>
+</body></html>
